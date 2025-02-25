@@ -25,7 +25,10 @@ export default function FileUpload({ onFileChange }: FileUploadProps) {
 
 return (
         <div>
-            <input type="file" onChange={handleChange}/>
+            <label htmlFor="file-upload" className="custom-file-upload">
+                Upload PDF
+            </label>
+            <input id="file-upload" type="file" onChange={handleChange}/>
             {file && <p>{file.name}</p>}
             {error && <p className="text-red-500">{error}</p>}
         </div>
