@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import { ThemeProvider } from 'next-themes'
 
 
 // Commenting out default fonts, will add fonts later
@@ -26,10 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body>
+        <ThemeProvider >
         <Navbar />
         {children}
+        </ThemeProvider>
       </body>
     </html>
   );
