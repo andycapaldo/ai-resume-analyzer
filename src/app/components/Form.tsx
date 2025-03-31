@@ -24,9 +24,9 @@ export default function Form() {
     }
 
     return (
-        <form className="bg-gray-50 shadow-md 
-                        rounded px-8 pt-6 pb-8 
-                        mb-4 max-w-md w-full" onSubmit={submitForm}>
+        <form className="bg-background shadow-md 
+                        rounded-lg px-8 pt-6 pb-8 
+                        mb-4 max-w-md w-full border-4 border-purple-300 dark:bg-slate-200" onSubmit={submitForm}>
             <h1 className='font-bold mb-2'>Job Info</h1>
             <div className='border-2 border-gray'>
                 <input name="jobTitle" className='rounded-t-sm bg-gray-100 w-full' placeholder='job title' />
@@ -43,7 +43,7 @@ export default function Form() {
             <div className="border-2 border-gray rounded-none bg-gray-100 w-full">
                 <FileUpload onFileChange={handleFileChange} />
             </div>
-            <div className='flex justify-center'>
+            <div className='flex justify-start'>
                 <button type="submit" className='rounded bg-black text-white mt-5 w-1/2'>Submit</button>
             </div>
         </form>

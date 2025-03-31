@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background:rgb(215, 236, 243);
   --foreground: #171717;
 }
 
