@@ -15,7 +15,7 @@ return (
             Resume<span className='text-accentCoral'>GPT</span>
         </div>
         <div className='flex gap-8 text-xl'>
-            <div onClick={() => setToggleIcon(!toggleIcon)} className='cursor-pointer'>
+            <div onClick={() => setToggleIcon(!toggleIcon)} className='cursor-pointer border-[1px] border-coolGray rounded-md px-2 text-lg w-8 h-8 flex items-center justify-center'>
                 {!toggleIcon ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faSun} />}
             </div>
             <div>
