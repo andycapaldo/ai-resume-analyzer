@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes'
+import Footer from "./components/Footer";
+import Container from "./components/Container";
 
 
 // Commenting out default fonts, will add fonts later
@@ -30,7 +32,11 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <body>
         <ThemeProvider>
-          {children}
+          <Container>
+            <Navbar />
+            {children}
+            <Footer />
+          </Container>
         </ThemeProvider>
       </body>
     </html>

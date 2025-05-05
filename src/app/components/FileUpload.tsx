@@ -25,7 +25,7 @@ export default function FileUpload({ onFileChange }: FileUploadProps) {
 
 return (
         <div>
-            <label htmlFor="file-upload" className="custom-file-upload">
+            <label htmlFor="file-upload" className="custom-file-upload font-bold rounded-md">
                 Upload PDF
             </label>
             <input id="file-upload" type="file" onChange={handleChange}/>
